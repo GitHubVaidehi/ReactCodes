@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React basics with HTML and CSS</title>
+</head>
+<!-- Using HTML -->
+<!-- <body>
+    <div id="root"> 
+        <h1>Basics of HTML andCSS</h1>
+    </div>
+</body> -->
+
+<!-- Using JavaSript -->
+<body>
+    <div id="root"></div>
+    <script>
+        const heading = document.createElement("h1");
+        heading.innerHTML = "Java Script basics";
+
+        const root = document.getElementById("root");
+        root.appendChild(heading);
+    </script>
+</body>
+</html>
