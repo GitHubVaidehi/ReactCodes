@@ -3,24 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>React basics with HTML and CSS</title>
+    <title>React basics-1</title>
 </head>
-<!-- Using HTML -->
-<!-- <body>
-    <div id="root"> 
-        <h1>Basics of HTML andCSS</h1>
-    </div>
-</body> -->
 
-<!-- Using JavaSript -->
+<!-- Injecting react scripts  -->
+<!-- React scripts are taken from : https://legacy.reactjs.org/docs/cdn-links.html -->
 <body>
     <div id="root"></div>
-    <script>
-        const heading = document.createElement("h1");
-        heading.innerHTML = "Java Script basics";
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script crossorigin src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+   
+    <!-- <script  type="text/babel">
+        // Ensure React and ReactDOM are loaded
 
-        const root = document.getElementById("root");
-        root.appendChild(heading);
-    </script>
+        // Render the component to the DOM
+        const heading = React.createElement("h1", {}, "Hello World from react!")
+        const root = ReactDOM.createRoot(document.getElementById("root"));
+        root.render(heading);
+    </script> -->
+
+    <script src="./App.js"></script>
 </body>
 </html>
